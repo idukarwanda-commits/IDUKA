@@ -67,7 +67,7 @@ The workflow then follows the relevant path:
 3. Decide whether to continue managing the shop.
 4. If yes, return to the operations selection. If no, end the session.
 
-## 4. SMART IDUKA automated capabilities
+## . SMART IDUKA automated capabilities
 
 | Capability | What SMART IDUKA is intended to do |
 |---|---|
@@ -81,7 +81,7 @@ The workflow then follows the relevant path:
 | Reporting and analytics | Present business performance and financial reports. |
 | Alerts | Notify the owner about low stock and relevant business conditions. |
 
-## 5. Important business and accounting rules
+## . Important business and accounting rules
 
 - Use decimal-safe monetary calculations (for example, Java `BigDecimal`).
 - Keep purchase costs and stock-movement history; do not overwrite historical transaction costs when a product's current cost changes.
@@ -93,20 +93,8 @@ The workflow then follows the relevant path:
 
 The BPMN diagram describes the business flow; detailed accounting rules must also be enforced in the application and database.
 
-## 6. Files
 
-Keep these project files together:
-
-```text
-SMART-IDUKA/
-├── README.md
-└── SMART_IDUKA_Business_Process.bpmn
-```
-
-- `README.md` — explains the process model, its purpose and how to open it.
-- `SMART_IDUKA_Business_Process.bpmn` — BPMN 2.0 XML diagram that can be opened and edited in a compatible BPMN modeler.
-
-## 7. How to open and edit the BPMN file
+## . How to open and edit the BPMN file
 
 1. Install **Camunda Modeler** from its official download page: https://camunda.com/download/modeler/
 2. Launch Camunda Modeler.
@@ -116,19 +104,7 @@ SMART-IDUKA/
 6. Save the file after making changes.
 
 You can also open the file in another BPMN 2.0-compatible modeler.
-
-## 8. How to export and print the diagram
-
-1. Open `SMART_IDUKA_Business_Process.bpmn` in Camunda Modeler.
-2. Use the available export option to save the diagram as SVG or PNG.
-3. For a printable document, open the exported SVG/PNG in a suitable application or insert it into a document and export that document as PDF.
-4. Before printing, check page orientation and scaling. A wide process diagram is usually clearer in landscape orientation.
-5. Use **Fit to page** or an equivalent print-scaling option so that no part of the diagram is cut off.
-
-The exact export menu can vary by Camunda Modeler version.
-
-## 9. Scope and limitations of this version
-
+## . Scope and limitations of this version
 This model presents the main owner-centric business workflow. It is a high-level process model and does not yet detail every exception or sub-process, including:
 - Supplier payment and supplier payable settlement.
 - Purchase returns and customer sales returns.
@@ -140,7 +116,7 @@ This model presents the main owner-centric business workflow. It is a high-level
 
 These can be added as separate BPMN sub-processes as the project requirements become more detailed.
 
-## 10. Expected business value
+## . Expected business value
 
 SMART IDUKA is intended to reduce manual record-keeping, improve stock visibility, make customer debts easier to track, reduce calculation errors, organize financial records and help the owner make better-informed business decisions.
 
